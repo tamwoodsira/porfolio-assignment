@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans';
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@media (min-width: 300px) {
+
+    main, header {
+        color: rgb(20, 20, 20);
+        background-image: linear-gradient(ghostwhite, lightcyan);
+        display: flex;
+        flex-direction: column;
+    }
+
+    header {
+        height: 50vh;
+        background-image: url(/images/coding-working.jpeg);
+        color: white;
+    }
+        
+    header, .about-me, .projects, .skills-head, .education, .contact {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    section {
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+
+    h2 {
+        font-weight: bold;
+        color: midnightblue;
+    }
+
+    h5 {
+        font-weight: bold;
+    }
+
+    h6 {
+        color: rgb(100, 100, 100);
+    }
+
+    .header-text {
+        font-size: 30px;
+    }
+
+    header > p {
+        font-size: 12px;
+    }
+
+    .icon {
+        width: 100%;
+        font-size: 20px;
+    }
+
+    .fa {
+        text-decoration: none;
+        color: white;
+    }
+
+    .mainpage h2 {
+        padding-bottom: 3%;
+    }
+
+    .about-me, .projects, .skills, .skills-head, .education, .contact {
+        padding: 5%;
+    }
+
+    .profile {
+        width: 30vh;
+        height: 30vh;
+        background: url(/images/profile.jpg);
+        border-radius: 50%;
+        /*margin: 0 auto;*/
+
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .about-text {
+        padding-top: 8%;
+    }
+
+    .span-blue {
+        color: midnightblue;
+    }
+
+    .projects-div, .about-me {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .projects-div {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        text-align: start;
+    }
+
+    .soft-skills, .technical-skills {
+        padding-left: 12%;
+        padding-right: 12%;
+    }
+
+    .skills > .soft-skills > h5, .skills > .technical-skills > h5 {
+        border-bottom: 1px solid black;
+        width: 95%;
+    }
+
+    .education, .projects {
+        display: flex;
+        flex-direction: column;
+        row-gap: 3vh;
+    }
+
+    .education aside {
+        width: 50vh;
+        height: 15vh;
+        margin-top: 5%;
+    }
+
+    .projects aside {
+        width: 50vh;
+        height: 25vh;
+        margin-top: 5%;
+    }
+
+    .card {
+        background-color: transparent;
+    }
+
+    .accordion-item, .accordion-button {
+        background-color: transparent;
+    }
+
+    .contact [type="text"], [type="email"], textarea {
+        width: 95%;
+        padding: 2%;
+    }
+
+    .contact-form > input {
+        margin-bottom: 5%;
+    }
+
+    .btn-submit {
+        color: dodgerblue;
+        border: 1px solid dodgerblue;
+    }
+
+    .btn-education, .btn-submit:hover {
+        color: white;
+        background-color: dodgerblue;
+    }
+
+    .btn-clear {
+        color: rgb(80, 80, 80);
+        border: 1px solid rgb(80, 80, 80);
+    }
+
+    .btn-clear:hover {
+        color: white;
+        background-color: rgb(80, 80, 80);
+    }
+
+    .button-form {
+        padding-top: 5%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .footer {
+        font-size: 12px;
+        color: white;
+        background-color: midnightblue;
+        padding: 5%;
+        text-align: center;
+    }
+
+    #project-1 > aside {
+        background: url(/images/project-1.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #project-2 > aside {
+        background: url(/images/project-2.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #project-3 > aside {
+        background: url(/images/project-3.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #project-4 > aside {
+        background: url(/images/project-4.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #tamwood-card > aside {
+        background: url(/images/Tamwood.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    #cmu-card > aside {
+        background: url(/images/CMU.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    #certificate-card > aside {
+        background: url(/images/GeorgiaTech.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+}
