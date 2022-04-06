@@ -20,12 +20,13 @@ html {
     }
 
     header {
-        height: 50vh;
+        height: 40vh;
         background-image: url(/images/coding-working.jpeg);
         color: white;
     }
         
     header, .about-me, .projects, .skills-head, .education, .contact {
+        display: flex;
         justify-content: center;
         align-items: center;
         text-align: center;
@@ -95,16 +96,9 @@ html {
         color: midnightblue;
     }
 
-    .projects-div, .about-me {
+    .about-me {
         display: flex;
         flex-direction: column;
-    }
-
-    .projects-div {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        text-align: start;
     }
 
     .soft-skills, .technical-skills {
@@ -123,16 +117,16 @@ html {
         row-gap: 3vh;
     }
 
-    .education aside {
+    .education > aside {
         width: 50vh;
         height: 15vh;
-        margin-top: 5%;
+        margin-top: 3%;
     }
 
     .projects aside {
-        width: 50vh;
-        height: 25vh;
+        width: 100%;
         margin-top: 5%;
+        margin-bottom: 5%;
     }
 
     .card {
