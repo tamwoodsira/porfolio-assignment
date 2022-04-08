@@ -58,8 +58,10 @@ html {
     }
 
     .icon {
-        width: 100%;
+        width: 50%;
         font-size: 20px;
+        display: flex;
+        justify-content: space-evenly;
     }
 
     .fa {
@@ -117,7 +119,8 @@ html {
         width: 95%;
     }
 
-    .education, .projects {
+    /* change from .education to .education-container */
+    .education-container, .projects {
         display: flex;
         flex-direction: column;
         row-gap: 3vh;
@@ -154,7 +157,11 @@ html {
 
     .btn-submit {
         color: dodgerblue;
+        padding: 2%;
+        font-weight: 600;
+        background-color: transparent;
         border: 1px solid dodgerblue;
+        border-radius: 5px;
     }
 
     .btn-education, .btn-submit:hover {
@@ -164,7 +171,11 @@ html {
 
     .btn-clear {
         color: rgb(80, 80, 80);
+        padding: 2%;
+        font-weight: 600;
+        background-color: transparent;
         border: 1px solid rgb(80, 80, 80);
+        border-radius: 5px;
     }
 
     .btn-clear:hover {
@@ -172,9 +183,15 @@ html {
         background-color: rgb(80, 80, 80);
     }
 
-    .button-form {
+    .d-flex {
+    /*before was class .button-form {*/
         padding-top: 5%;
         display: flex;
+        justify-content: space-evenly;
+    }
+
+    /* just added, after change .button-form to class d-flex*/
+    .contact > form > [class="d-flex"] {
         justify-content: space-evenly;
     }
 
@@ -183,6 +200,11 @@ html {
         color: white;
         background-color: midnightblue;
         padding: 5%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         text-align: center;
     }
 
@@ -222,14 +244,21 @@ html {
     }
 
     #cmu-card > aside {
-        background: url(/images/CMU.png);
+        background: url(/images/Chiangmai.png);
         background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
     }
 
-    #certificate-card > aside {
+    #georgia-card > aside {
         background: url(/images/GeorgiaTech.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    #hec-card > aside {
+        background: url(/images/HEC.png);
         background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
