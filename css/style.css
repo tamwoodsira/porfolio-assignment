@@ -128,7 +128,6 @@ html {
         width: 95%;
     }
 
-    /* change from .education to .education-container */
     .education-container, .projects {
         display: flex;
         flex-direction: column;
@@ -197,13 +196,11 @@ html {
     }
 
     .d-flex {
-    /*before was class .button-form {*/
         padding-top: 5%;
         display: flex;
         justify-content: space-evenly;
     }
 
-    /* just added, after change .button-form to class d-flex*/
     .contact > form > [class="d-flex"] {
         justify-content: space-evenly;
     }
@@ -346,6 +343,88 @@ html {
 
     .footer {
         font-size: 20px;
+    }
+
+}
+
+
+
+@media (min-width: 1000px) {
+    .navigation-menu {
+        display: block !important;
+        width: 100%;
+        height: 15vh;
+        position: fixed;
+        z-index: 1;
+    }
+
+    .navigation-menu ul {
+        padding: 0;
+        list-style-type: none;
+        justify-content: space-evenly;
+    }
+
+    .navigation-menu li {
+        width: 100%;
+        display: flex;
+    }
+
+    .navigation-menu a {
+        width: 100%;
+        padding: 5%;
+        text-decoration: none;
+        color: white;
+        background-color: rgba(90, 100, 130, 0.5);
+        font-weight: 600;
+        font-size: 15px;
+        text-align: center;
+        padding: 7%;
+    }
+
+    .navigation-menu a:hover {
+        background-color: dodgerblue;
+    }
+
+    .icon {
+        width: 30%;
+    }
+
+    .profile {
+        width: 40vh;
+        height: 40vh;
+    }
+
+    .about-text {
+        width: 80%;
+        text-align: justify;
+    }
+
+    .projects aside {
+        height: 50vh;
+    }
+
+    .education-container {
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    .education-container, .projects {
+        row-gap:5vh;
+    }
+
+    .education-container > .card {
+        width: 40%;
+    }
+
+    .footer {
+        font-size: 25px;
+        padding: 2%;
+    }
+
+    .icon-footer {
+        width: 30%;
+        font-size: 25px;
     }
 
 }
