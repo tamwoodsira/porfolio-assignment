@@ -428,3 +428,31 @@ html {
     }
 
 }
+
+
+
+@media (min-width: 1200px) {
+
+    header > p {
+        padding: 0;
+    }
+
+    .projects > div > aside {
+        height: 80vh;
+    }
+
+    .btn-submit, .btn-clear {
+        font-size: 20px;
+
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 5%;
+    }
+
+    .footer {
+        font-size: 20px;
+    }
+
+}
